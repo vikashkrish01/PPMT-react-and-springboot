@@ -20,7 +20,7 @@ import { SET_CURRENT_USER } from "./actions/actionTypes";
 import { logout } from "./actions/securityActions";
 import SecureRoutes from "./SecurityUtils/secureRoutes";
 
-const jwtToken = localStorage.jwtToken;
+const jwtToken = localStorage.getItem("jwtToken");
 
 if (jwtToken) {
   setJWTToken(jwtToken);
